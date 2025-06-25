@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alta de Nodo – CONSORCIA</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
+    form { max-width: 600px; margin: auto; background: white; padding: 2rem; border-radius: 8px; }
+    input, select, textarea { width: 100%; padding: 0.5rem; margin: 1rem 0; border-radius: 4px; border: 1px solid #ccc; }
+    button { background: #2c2f5c; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Alta de nuevo nodo</h1>
+  <form>
+    <label>Nombre del edificio o consorcio</label>
+    <input type="text" required>
+
+    <label>Dirección</label>
+    <input type="text" required>
+
+    <label>Tipología</label>
+    <select required>
+      <option>Torre</option>
+      <option>PH</option>
+      <option>Pluribloque</option>
+    </select>
+
+    <label>Contacto responsable</label>
+    <input type="email" required>
+
+    <label>Comentarios adicionales</label>
+    <textarea rows="4"></textarea>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+</body>
+</html>
