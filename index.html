@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONSORCIA – Red de Simuladores Catabáticos</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #2c2f5c;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .nodos {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .nodo {
+      background-color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      border-left: 5px solid #2c2f5c;
+      transition: 0.3s;
+    }
+    .nodo:hover {
+      background-color: #eef1ff;
+    }
+    .nodo h3 {
+      margin: 0 0 0.5rem;
+    }
+    .nodo a {
+      color: #2c2f5c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CONSORCIA</h1>
+    <p>Red de simuladores catabáticos para la autogestión vecinal</p>
+  </header>
+
+  <section>
+    <h2>Nodos activos</h2>
+    <div class="nodos">
+      <div class="nodo">
+        <h3>Mitre 1129/35 (CABA)</h3>
+        <p>Primer nodo piloto en funcionamiento con simulación de mantenimiento y estrategia jurídica en curso.</p>
+        <a href="https://orecchez.github.io/Mitre1129-35" target="_blank">Acceder al nodo</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Prototipos base</h2>
+    <div class="nodos">
+      <div class="nodo">
+        <h3>Template – Edificio Torre</h3>
+        <p>Modelo genérico adaptable a edificios de altura media con ascensor y terraza.</p>
+        <a href="templates/tipo-torre.html">Ver plantilla</a>
+      </div>
+      <div class="nodo">
+        <h3>Template – PH Clásico</h3>
+        <p>Ideal para inmuebles de baja densidad con patios y accesos compartidos.</p>
+        <a href="templates/tipo-ph.html">Ver plantilla</a>
+      </div>
+      <div class="nodo">
+        <h3>Template – Pluribloque</h3>
+        <p>Para conjuntos edilicios con múltiples cuerpos y servicios comunes descentralizados.</p>
+        <a href="templates/tipo-pluribloque.html">Ver plantilla</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sumar nuevo nodo</h2>
+    <div class="nodos">
+      <div class="nodo">
+        <h3>Alta de edificio o comunidad</h3>
+        <p>Si querés adaptar el simulador a tu edificio o grupo barrial, completá el formulario inicial.</p>
+        <a href="formularios/alta-nodo.html">Ir al formulario</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    CONSORCIA · Proyecto Catabático Autónomo · Buenos Aires, 2025 · Licencia MIT
+  </footer>
+</body>
+</html>
